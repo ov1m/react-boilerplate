@@ -1,0 +1,9 @@
+{
+  "name": "react-webpack-boileplate",
+  "version": "0.0.1",
+  "description": "React Webpack boileplate",
+  "main": "index.js",
+  "repository": "https://github.com/ov1m/react-boilerplate.git",
+  "author": "Ovidiu Mocan",
+  "license": "MIT"
+}
