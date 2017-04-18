@@ -44,10 +44,9 @@ const config = (env = {}) => {
             fallback: 'style-loader',
             use: ['css-loader', 'sass-loader']
           })
-          // loader: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(jpe?g|png|gif|svg)$/i,
+          test: /\.(jpe?g|png|gif|svg)$/,
           use: [
             'url-loader?limit=10000',
             'img-loader'
@@ -58,16 +57,7 @@ const config = (env = {}) => {
           use: {
             loader: 'file-loader',
             options: {
-              name: 'fonts/[name].[ext]'
-            }
-          }
-        },
-        {
-          test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
-          use: {
-            loader: 'file-loader',
-            options: {
-              name: 'fonts/[name].[hash].[ext]'
+              name: 'fonts/[name].[chunkhash].[ext]'
             }
           }
         }
