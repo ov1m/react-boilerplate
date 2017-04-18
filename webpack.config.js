@@ -79,7 +79,7 @@ const config = (env = {}) => {
         algorithm: "gzip",
         test: /\.(js|html)$/,
         minRatio: 0.8
-       }),
+      }),
       new ExtractTextPlugin('[name].[chunkhash].css'),
       new HtmlWebpackPlugin({
         template: 'src/index.html'
