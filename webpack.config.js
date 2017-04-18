@@ -1,4 +1,4 @@
-const CompressionPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -75,8 +75,8 @@ const config = (env = {}) => {
     },
     plugins: [
       new CompressionPlugin({
-        asset: "[path].gz[query]",
-        algorithm: "gzip",
+        asset: '[path].gz[query]',
+        algorithm: 'gzip',
         test: /\.(js|html)$/,
         minRatio: 0.8
       }),
@@ -97,7 +97,7 @@ const config = (env = {}) => {
       errorDetails: true
     },
     resolve: {
-      extensions: [".js", ".jsx", ".json", ".css"]
+      extensions: ['', '.js', '.jsx', '.json', '.css']
     }
   })
 };

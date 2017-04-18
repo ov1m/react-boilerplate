@@ -2,25 +2,25 @@
 
 ### run
 
-Bbuild for dev
+Build for dev
 ```
 yarn run dev
-or
-npm run dev
+```
+
+
+Testing with Jest and Enzyme / snapshot testing
+```
+yarn test
 ```
 
 
 Start webpack-dev-server
 ```
 yarn run dev:server
-or
-npm run dev:server
 ```
 
 
 build for production
 ```
 yarn run build
-or
-npm run build
 ```
