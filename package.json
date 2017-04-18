@@ -15,7 +15,7 @@
     "dev:server": "webpack-dev-server --env.dev",
     "test": "jest",
     "test:watch": "hest --watch --coverage",
-    "precommit": "validate",
+    "precommit": "npm-run-all validate",
     "validate": "npm-run-all --parallel lint test"
   },
   "dependencies": {
