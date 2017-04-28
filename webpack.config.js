@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
+
 const VENDOR_LIBS = ['react', 'react-dom'];
 
 const config = (env = {}) => ({
@@ -16,7 +17,7 @@ const config = (env = {}) => ({
     path: path.resolve(__dirname, 'dist')
     // publicPath: '/dist/'
   },
-  devtool: env.prod ? 'source-maps' : 'eval',
+  devtool: env.prod ? 'source-maps' : 'source-maps',
   module: {
     rules: [
       {
@@ -86,7 +87,7 @@ const config = (env = {}) => ({
     errorDetails: true
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json', '.css']
+    extensions: ['.js', '.jsx', '.json', '.css']
   }
 });
 
