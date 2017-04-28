@@ -13,6 +13,7 @@
     "predev": "rm -rf dist",
     "dev": "webpack --env.dev",
     "dev:server": "webpack-dev-server --env.dev",
+    "prettier": "prettier",
     "test": "jest",
     "test:watch": "hest --watch --coverage",
     "precommit": "npm-run-all validate",
