@@ -3,6 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
+const cleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 const VENDOR_LIBS = ['react', 'react-dom'];
@@ -74,6 +75,7 @@ const config = (env = {}) => ({
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
+    new cleanWebpackPlugin(['dist']),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest']
     }),
