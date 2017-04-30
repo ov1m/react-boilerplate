@@ -10,7 +10,6 @@ module.exports = {
     "import"
   ],
   "rules": {
-    "comma-dangle": ["error", "never"],
-    "quotes": ["error", "single"]
+    "comma-dangle": ["error", "never"]
   }
 };
